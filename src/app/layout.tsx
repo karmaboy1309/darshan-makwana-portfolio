@@ -13,8 +13,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Darshan Makwana | Portfolio",
-  description: "IT Engineering student at MBIT bridging the gap between scalable web architecture and intelligent AI solutions.",
+  title: "Darshan Makwana | Full-Stack & AI Engineer",
+  description: "Portfolio of Darshan Makwana, an IT Engineering student at MBIT specializing in MERN stack development, scalable web architecture, and intelligent AI solutions.",
+  keywords: ["Darshan Makwana", "Full-Stack Developer", "MERN Stack", "AI Engineer", "React Developer", "Next.js", "Portfolio", "Software Engineer"],
+  authors: [{ name: "Darshan Makwana" }],
+  creator: "Darshan Makwana",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://github.com/karmaboy1309",
+    title: "Darshan Makwana | Full-Stack & AI Engineer",
+    description: "Discover the projects, skills, and experience of Darshan Makwana, a passionate IT Engineering student bridging web architecture and AI.",
+    siteName: "Darshan Makwana Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Darshan Makwana | Full-Stack & AI Engineer",
+    description: "Discover the projects, skills, and experience of Darshan Makwana.",
+  },
 };
 
 export default function RootLayout({
