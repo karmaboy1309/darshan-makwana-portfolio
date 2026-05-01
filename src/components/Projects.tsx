@@ -5,13 +5,40 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Mini Unix Shell",
-    description: "A custom Unix shell built in C using POSIX system calls, featuring command execution, piping, redirection, and process management.",
-    tags: ["C", "Linux", "POSIX", "OS"],
-    github: "https://github.com/karmaboy1309/mini-shell",
-    live: "#",
-    gradient: "from-emerald-500 to-teal-400"
+    title: "Portfolio : Darshan Makwana",
+    description: "Personal portfolio showcasing scalable MERN stack applications, Azure AI solutions, and community leadership.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
+    github: "https://github.com/karmaboy1309/darshan-makwana-portfolio",
+    live: "https://darshan-makwana-portfolio.vercel.app/",
+    gradient: "from-cyan-500 to-purple-500"
   },
+  {
+    title: "GitHub Profile README Generator",
+    description: "A glassmorphism-powered README generator with live preview and one-click export for GitHub profiles.",
+    tags: ["React", "Vite", "Tailwind", "Markdown"],
+    github: "https://github.com/karmaboy1309/readme-generator",
+    live: "https://readme-generator-three-psi.vercel.app/",
+    gradient: "from-fuchsia-500 to-rose-400"
+  },
+  
+  {
+    title: "Zero-G Harmonium",
+    description: "Antigravity web-based harmonium with physics simulation, bringing an interactive musical experience to the web.",
+    tags: ["JavaScript", "Physics Simulation", "Web Audio"],
+    github: "https://github.com/karmaboy1309/web_harmonium",
+    live: "https://github.com/karmaboy1309/web_harmonium",
+    gradient: "from-rose-500 to-orange-400"
+  },
+  
+  {
+    title: "Facial Emotion Recognition System",
+    description: "The model classifies human emotions based on facial expressions and provides real-time emotion detection via a web application.",
+    tags: ["AI", "Ml", "Vision", "Emotion", "NLP"],
+    github: "https://github.com/karmaboy1309/emotion-ai",
+    live: "#",
+    gradient: "from-blue-600 to-indigo-500"
+  },
+
   {
     title: "Job Portal Platform",
     description: "A full-stack job portal platform with dynamic routing, robust backend APIs, and database integration.",
@@ -20,13 +47,14 @@ const projects = [
     live: "#",
     gradient: "from-blue-600 to-indigo-500"
   },
+
   {
-    title: "Zero-G Harmonium",
-    description: "Antigravity web-based harmonium with physics simulation, bringing an interactive musical experience to the web.",
-    tags: ["JavaScript", "Physics Simulation", "Web Audio"],
-    github: "https://github.com/karmaboy1309/web_harmonium",
-    live: "https://github.com/karmaboy1309/web_harmonium",
-    gradient: "from-rose-500 to-orange-400"
+    title: "Mini Unix Shell",
+    description: "A custom Unix shell built in C using POSIX system calls, featuring command execution, piping, redirection, and process management.",
+    tags: ["C", "Linux", "POSIX", "OS"],
+    github: "https://github.com/karmaboy1309/mini-shell",
+    live: "#",
+    gradient: "from-emerald-500 to-teal-400"
   },
   {
     title: "AATS (AI Trading System)",
