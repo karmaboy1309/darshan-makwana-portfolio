@@ -52,7 +52,7 @@ export function Contact() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Let's Connect</h2>
-          <p className="text-slate-400">Have a project in mind, a question, or just want to say hi? Drop a message below!</p>
+          <p className="text-slate-400">Connecting is the first step toward innovation. I look forward to hearing from you. Drop a message below!</p>
         </motion.div>
 
         <motion.form
