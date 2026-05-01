@@ -50,6 +50,14 @@ export function Hero() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
+              href="/resume-cv.pdf"
+              download
+              className="group flex items-center gap-2 px-6 py-3 text-slate-200 font-medium bg-white/5 border border-white/10 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300"
+            >
+              Resume / CV
+              <Download className="w-4 h-4" />
+            </a>
+            <a
               href="#contact"
               className="group flex items-center gap-2 px-6 py-3 text-slate-300 font-medium bg-white/5 border border-white/10 rounded-full hover:bg-white/10 hover:text-white transition-all duration-300"
             >
@@ -79,7 +87,7 @@ export function Hero() {
                  <p><span className="text-purple-400">const</span> <span className="text-blue-400">darshan</span> = <span className="text-cyan-300">new Developer</span>({'{'}</p>
                  <p className="pl-4">name: <span className="text-green-300">'Darshan Makwana'</span>,</p>
                  <p className="pl-4">role: <span className="text-green-300">'Full-Stack Engineer'</span>,</p>
-                 <p className="pl-4">skills: [<span className="text-green-300">'React'</span>, <span className="text-green-300">'Next.js'</span>, <span className="text-green-300">'Node'</span>],</p>
+                 <p className="pl-4">skills: [<span className="text-green-300">'React','Angular'</span>, <span className="text-green-300">'Next.js'</span>, <span className="text-green-300">'Node','MongoDB'</span>],</p>
                  <p className="pl-4">focus: <span className="text-green-300">'AI Integration'</span></p>
                  <p>{'}'});</p>
                  <br />
