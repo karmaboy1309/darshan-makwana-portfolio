@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -13,23 +14,53 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Darshan Makwana | Full-Stack & AI Engineer",
-  description: "Portfolio of Darshan Makwana, an IT Engineering student at MBIT specializing in MERN stack development, scalable web architecture, and intelligent AI solutions.",
-  keywords: ["Darshan Makwana", "Full-Stack Developer", "MERN Stack", "AI Engineer", "React Developer", "Next.js", "Portfolio", "Software Engineer"],
+  metadataBase: new URL("https://darshan-makwana-portfolio.vercel.app"),
+  title: "Darshan Makwana | Full-Stack Developer Portfolio",
+  description:
+    "Darshan Makwana — Full-Stack Developer (MERN Stack) & IT Student. Explore projects, skills, and experience in React, Next.js, Node.js & AI.",
+  keywords: [
+    "Darshan Makwana",
+    "Darshan Makwana Portfolio",
+    "Darshan Makwana Web Developer",
+    "Full-Stack Developer",
+    "MERN Stack Developer",
+    "AI Engineer",
+    "React Developer",
+    "Next.js Developer",
+    "Node.js Developer",
+    "Software Engineer Portfolio",
+    "Darshan Makwana Projects",
+  ],
   authors: [{ name: "Darshan Makwana" }],
   creator: "Darshan Makwana",
+  alternates: {
+    canonical: "https://darshan-makwana-portfolio.vercel.app",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://github.com/karmaboy1309",
-    title: "Darshan Makwana | Full-Stack & AI Engineer",
-    description: "Discover the projects, skills, and experience of Darshan Makwana, a passionate IT Engineering student bridging web architecture and AI.",
+    url: "https://darshan-makwana-portfolio.vercel.app",
+    title: "Darshan Makwana | Full-Stack Developer Portfolio",
+    description:
+      "Darshan Makwana — Full-Stack Developer (MERN Stack) & IT Student. Explore projects, skills, and experience in React, Next.js, Node.js & AI.",
     siteName: "Darshan Makwana Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Darshan Makwana | Full-Stack & AI Engineer",
-    description: "Discover the projects, skills, and experience of Darshan Makwana.",
+    title: "Darshan Makwana | Full-Stack Developer Portfolio",
+    description:
+      "Darshan Makwana — Full-Stack Developer (MERN Stack) & IT Student. Explore projects, skills, and experience.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
@@ -40,6 +71,36 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark scroll-smooth">
+      <head>
+        <Script
+          id="json-ld-person"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Darshan Makwana",
+              url: "https://darshan-makwana-portfolio.vercel.app",
+              jobTitle: "Full-Stack Developer",
+              description:
+                "Full-Stack Developer (MERN Stack) and IT Student specializing in React, Next.js, Node.js, and AI solutions.",
+              sameAs: [
+                "https://github.com/karmaboy1309",
+              ],
+              knowsAbout: [
+                "MERN Stack",
+                "React",
+                "Next.js",
+                "Node.js",
+                "TypeScript",
+                "AI",
+                "Web Development",
+              ],
+            }),
+          }}
+        />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased bg-slate-950 text-slate-50 min-h-screen selection:bg-cyan-500/30 selection:text-cyan-50`}>
         {children}
       </body>
