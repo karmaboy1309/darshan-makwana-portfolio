@@ -41,7 +41,7 @@ export function Navbar() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
+          {navLinks.filter((link) => link.name !== "Contact").map((link) => (
             <a
               key={link.name}
               href={link.href}
@@ -51,10 +51,10 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="#projects"
-            className="px-5 py-2.5 text-sm font-medium text-white bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full hover:scale-105 transition-transform duration-300 shadow-[0_0_15px_rgba(6,182,212,0.4)]"
+            href="#contact"
+            className="px-5 py-2.5 text-sm font-medium text-white bg-gradient-to-r from-violet-600 to-indigo-600 rounded-full hover:scale-105 transition-transform duration-300 shadow-[0_0_15px_rgba(99,102,241,0.4)]"
           >
-            Let's Talk
+            Contact
           </a>
         </nav>
 
