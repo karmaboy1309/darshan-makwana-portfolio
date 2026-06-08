@@ -38,7 +38,7 @@ export function Hero() {
           </h2>
 
           <p className="text-lg text-slate-400 max-w-xl leading-relaxed">
-            3rd-year IT Engineering student at MBIT. Full-stack MERN developer, Azure AI certified, and tech community leader bridging the gap between scalable web architecture and intelligent AI solutions.
+            Final-year IT Engineering student at MBIT. Full-stack MERN developer, Azure AI certified, and tech community leader bridging the gap between scalable web architecture and intelligent AI solutions.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 mt-4">
