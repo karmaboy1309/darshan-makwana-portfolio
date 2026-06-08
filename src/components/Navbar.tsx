@@ -36,8 +36,8 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="text-2xl font-bold tracking-tighter text-white hover:text-cyan-400 transition-colors duration-300 group">
-          DM<span className="text-cyan-400 group-hover:text-purple-500 transition-colors duration-300">.</span>
+        <a href="#" className="flex items-center gap-2 hover:opacity-80 transition-opacity duration-300">
+          <img src="/dj_logo.png" alt="DJ Logo" className="h-16 md:h-24 w-auto object-contain" />
         </a>
 
         {/* Desktop Nav */}
